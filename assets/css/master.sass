@@ -1,0 +1,417 @@
+=transform-scale($value)
+  -webkit-transform: scale($value)
+  -moz-transform: scale($value)
+  -ms-transform: scale($value)
+  -o-transform: scale($value)
+  transform: scale($value)
+// dds
+$twitter: #00aced
+$facebook: #3b5998
+$googleplus: #dd4b39
+$pinterest: #cb2027
+$linkedin: #007bb6
+$youtube: #bb0000
+$vimeo: #1ab7ea
+$tumblr: #32506d
+$instagram: #bc2a8d
+$flickr: #ff0084
+$dribbble: #ea4c89
+$quora: #a82400
+$foursquare: #0072b1
+$forrst: #5B9A68
+$vk: #45668e
+$wordpress: #21759b
+$stumbleupon: #EB4823
+$yahoo: #7B0099
+$blogger: #fb8f3d
+$soundcloud: #ff3a00
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+html
+  background-color: #fff
+  color: #555
+  font-family: 'Lato', 'Arial', sans-serif
+  font-weight: 300
+  font-size: 20px
+  text-rendering: optimizeLegibility
+  overflow-x: hidden
+.row
+  max-width: 1140px
+  margin: 0 auto
+header
+  background-image:  linear-gradient(rgba(100, 100, 100, 0.5),rgba(0, 0, 0, 0.5)),url(../img/hero.jpg)
+  height: 100vh
+  background-size: cover
+  background-position: center
+  background-attachment: fixed
+h1
+  margin-top: 0
+  margin-bottom: 15px
+  font-size: 230%
+  font-weight: 300
+  color: #fff
+  text-transform: uppercase
+  letter-spacing: 1px
+  word-spacing: 4px
+  #beautiful
+    color: #c32222
+    font-style: italic
+    font-family: 'Parisienne', cursive
+    text-transform: lowercase
+    font-size: 1.5em
+.hero-text-box
+  position: absolute
+  width: 1140px
+  top: 70%
+  left: 50%
+  transform: translate(-50%,-50%)
+  p
+    color: rgb(230, 126, 34)
+    font-size: 70%
+    margin-bottom: 10px
+    font-weight: 500
+    background-color: rgba(230, 126, 34, 0.2)
+    padding: 5px 30px 5px 30px
+    border-left: 3px solid rgb(230, 126, 34)
+    display: inline-block
+    text-transform: capitalize
+    span
+      padding-left: 30px
+      margin-left: 5px
+      border-left: 3px solid rgb(230, 126, 34)
+.btn:link, btn:visited, input[type=submit]
+  display: inline-block
+  padding: 10px 30px
+  font-weight: 300
+  text-decoration: none
+  border: 1px solid white
+  border-radius: 200px
+  color: #e67e22
+  transition: background-color 0.2s, border 0.2s, color 0.2s
+.btn:hover,.btn:active, input[type=submit]
+  background-color: #cf6d17
+.btn-full:link,
+.btn-full:visited,
+input[type=submit]
+  background: #e67e22
+  color: #fff
+.btn-full:hover,
+.btn-full:active,
+input[type=submit]:hover,
+input[type=submit]:active
+  background: #cf6d17
+  color: #fff
+  border: 1px solid #cf6d17
+.btn-ghost:link,
+.btn-ghost:visited
+  border: 1px solid #e67e22
+  color: #e67e22
+.btn-ghost:hover,
+.btn-ghost:active
+  border: 1px solid #cf6d17
+  color: #fff
+// NOTE: up arrow
+.up-arrow
+  position: fixed
+  left: 95%
+  top: 80%
+  font-size: 260%
+  color: #999
+  display: none
+  cursor: pointer
+
+// NOTE: fixed navigation format
+.fixed-nav
+  width: 100%
+  padding-bottom: 20px
+  .logo
+    margin-top: 20px
+    float: left
+    color: #fff
+    font-weight: bold
+  .main-nav
+    margin-top: 20px
+    float: right
+    list-style: none
+    li
+      display: inline
+      margin-left: 40px
+      a:link, a:visited
+        padding: 8px 0
+        color: #fff
+        text-decoration: none
+        text-transform: uppercase
+        font-size: 80%
+        border-bottom: 2px solid transparent
+        transition: border-bottom 0.2s
+      a:hover, a:active
+        border-bottom: 2px solid #e67e22
+// NOTE: sticky navigation format
+.sticky-nav
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  background-color: rgba(255, 255, 255, 0.9)
+  padding-bottom: 20px
+  z-index: 30
+  .logo
+    margin-top: 20px
+    float: left
+    color: #000
+    font-weight: bold
+  .main-nav
+    margin-top: 20px
+    float: right
+    list-style: none
+    li
+      display: inline
+      margin-left: 40px
+      a:link, a:visited
+        padding: 8px 0
+        color: #cf6d17
+        text-decoration: none
+        text-transform: uppercase
+        font-size: 80%
+        border-bottom: 2px solid transparent
+        transition: border-bottom 0.2s
+      a:hover, a:active
+        border-bottom: 2px solid #e67e22
+// NOTE: mobile navigation
+.mobile-nav-icon
+  float: right
+  margin-top: 15px
+  cursor: pointer
+  display: none
+  i
+    font-size: 200%
+    color: white
+
+
+// NOTE: features section
+.js-wp-1
+  opacity: 0
+.js-wp-1.animate
+  opacity: 1
+.container
+  margin: 0 auto
+  width: 100%
+  text-align: center
+section
+  padding: 80px 0
+h2
+  font-weight: 300
+  text-transform: uppercase
+  letter-spacing: 1px
+  font-size: 180%
+  word-spacing: 2px
+  text-align: center
+  margin-bottom: 30px
+h3
+  font-weight: 300
+  text-transform: uppercase
+  letter-spacing: 1px
+  font-size: 110%
+  word-spacing: 2px
+  margin-bottom: 15px
+h2::after
+  display: block
+  height: 2px
+  background: #e67e22
+  content: " "
+  width: 100px
+  margin: 0 auto
+  margin-top: 30px
+.long-copy
+  line-height: 145%
+  width: 70%
+  margin-left: 15%
+  text-align: justify
+  margin-bottom: 30px
+.box
+  padding: 1%
+  text-align: justify
+  p
+    font-size: 90%
+    line-height: 145%
+  .icon-big
+    font-size: 350%
+    color: #e67e22
+    margin-bottom: 10px
+    display: block
+// Featured work section
+.section-work
+  padding: 0
+  overflow: hidden
+.work-showcase
+  list-style: none
+  width: 100%
+  li
+    display: block
+    float: left
+    max-width: 33.33%
+.featured-work
+  width: 100%
+  margin: 0
+  overflow: hidden
+  background: #000
+  img
+    opacity: 0.7
+    width: 100%
+    height: auto
+    +transform-scale(1.15)
+    transition: transform 0.5s, opacity 0.5s
+  img:hover
+    +transform-scale(1.03)
+    opacity: 1
+//How it works
+.js-wp-2
+  opacity: 0
+.js-wp-2.animate
+  opacity: 1
+.section-steps
+  padding: 80px 0
+  background: #efefef
+.steps-box
+  margin-top: 30px
+  img
+    width: 100%
+    height: auto
+.steps-box:first-child
+  text-align: left
+  padding-right: 3%
+.steps-box:last-child
+  padding-left: 3%
+.work-step
+  margin-bottom: 50px
+  .step
+    color: #e67e22
+    border: 2px solid #e67e22
+    height: 55px
+    width: 55px
+    display: inline-block
+    border-radius: 50%
+    text-align: center
+    padding-top: 10px
+    float: left
+    font-size: 150%
+    margin-right: 25px
+.app
+  width: 50%
+.btn-app
+  width: 100%
+  height: auto
+.box
+  a
+    img
+      width: 80%
+      height: 85px
+      margin: 0 auto 20px auto
+.js-wp-3
+  animation-duration: 1s
+//icon manipulation technique to make it in line and aligned vertically and horizontally
+.icon-small
+  display: inline-block
+  width: 30px
+  text-align: center
+  color: #e67e22
+  font-size: 120%
+  line-height: 120%
+  vertical-align: middle
+  margin-top: -5px
+  margin-right: 10px
+// tastemonial section
+
+.section-testimonial
+  background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(../img/testimonial.jpg)
+  background-size: cover
+  background-position: center
+  color: #fff
+  background-attachment: fixed
+  blockquote
+    padding: 2%
+    font-style: italic
+    line-height: 145%
+    position: relative
+    margin-top: 50px
+  blockquote:before
+    content: '\201C'
+    display: block
+    font-size: 400%
+    position: absolute
+    top: -5px
+    left: -5px
+    cite
+      font-size: 80%
+      display: block
+      margin-top: 25px
+//contact
+.contact-form
+  width: 60%
+  margin: 0 auto
+  input[type=text],input[type=email], select, textarea
+    width: 100%
+    padding: 10px
+    border-radius: 5px
+    border: 1px solid #ccc
+  textarea
+    height: 100px
+  input[type=checkbox]
+    margin: 10px 5px 10px 0
+  *:focus
+    outline: none
+
+// footer
+footer
+  background-color: #333
+  padding: 40px 0 40px 0
+  font-size: 80%
+  .footer-nav
+    list-style: none
+    float: left
+    li
+      display: inline-block
+      margin-right: 20px
+    a:link, a:visited
+      text-decoration: none
+      color: #888
+      transition: color 0.2s
+    a:hover, a:active
+      color: #ddd
+  .social-links
+    list-style: none
+    float: right
+    font-size: 150%
+    li
+      display: inline-block
+      margin-right: 20px
+    a:link, a:visited
+      text-decoration: none
+      color: #888
+      transition: color 0.2s
+    .ion-social-facebook,
+    .ion-social-twitter,
+    .ion-social-googleplus,
+    .ion-social-github,
+    .ion-social-linkedin
+      color: #888
+      transition: color 0.2s
+    .ion-social-facebook:hover, .ion-social-facebook:active
+      color: $facebook
+    .ion-social-twitter:hover, .ion-social-twitter:active
+      color: $twitter
+    .ion-social-googleplus:hover, .ion-social-googleplus:active
+      color: $googleplus
+    .ion-social-github:hover, .ion-social-github:active
+      color: #fff
+    .ion-social-linkedin:hover, .ion-social-linkedin:active
+      color: $linkedin
+    li:last-child
+      margin-right: 0
+  p
+    color: #888
+    text-align: center
+    font-size: 50%
+    margin-top: 50px
